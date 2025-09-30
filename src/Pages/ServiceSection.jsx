@@ -4,6 +4,8 @@ import Img1 from "../assets/Servicepng/Rectangle 7 (1).png"
 import Img3 from "../assets/Servicepng/Rectangle 834.png"
 import Img4 from "../assets/Servicepng/Rectangle 835.png"
 import Img5 from "../assets/Servicepng/Rectangle 836.png"
+import heroImg from "../assets/navbaarpng/lines.svg";
+
 
 const BusinessPortfolio = () => {
   const [currentPortfolioSlide, setCurrentPortfolioSlide] = useState(0);
@@ -132,6 +134,22 @@ const BusinessPortfolio = () => {
 
   return (
     <div className="min-h-screen pt-16 md:pt-20 lg:pt-[100px] bg-[rgba(225,225,225,1)] overflow-hidden">
+      <img
+              src={heroImg}
+              alt="Hero"
+              className="absolute 
+    right-0 
+    w-[90vw] h-[80vw] top-6   /* har screen ke width ka 80% */
+    md:w-[70vw] md:h-[70vw] 
+    lg:w-[60vw] lg:h-[60vw]
+    lg:-top-[50px]
+    object-contain 
+    pointer-events-none 
+    select-none 
+    animate-popRotateY 
+    opacity-20"
+            />
+      
       {/* Hero Section */}
       <section className="py-12 md:py-16 lg:py-20 px-4 md:px-6 overflow-hidden">
         <div className="absolute bg-opacity-20"></div>
@@ -142,9 +160,12 @@ const BusinessPortfolio = () => {
           <p className="text-lg md:text-xl mb-6 md:mb-8 opacity-90 max-w-2xl mx-auto px-4">
             when you need us for improve your business,then come with us to help your business have reach it, you just sit and feel that goal
           </p>
+          <a href="/Contact">
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-10 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
             Start Project
           </button>
+          </a>
+          
         </div>
         
         {/* Hero Image */}
@@ -296,9 +317,11 @@ const BusinessPortfolio = () => {
           </div>
 
           <div className="text-center mt-8 md:mt-12">
-            <button className="text-blue-700 px-6 md:px-8 py-2 md:py-3 border border-solid border-blue-700 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+            <a href="/portfolio"><button className="text-blue-700 px-6 md:px-8 py-2 md:py-3 border border-solid border-blue-700 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
               See all Portfolio
             </button>
+            </a>
+            
           </div>
         </div>
       </section>
@@ -389,9 +412,12 @@ const BusinessPortfolio = () => {
               <p className="text-gray-600 mb-6 md:mb-8 text-base md:text-lg">
                 Help you to reach your business goal. Let's work together to create something amazing and achieve your vision.
               </p>
+              <a href="/Contact">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Get Started
               </button>
+              </a>
+              
             </div>
             <div className="relative w-full max-w-xl mx-auto order-1 lg:order-2">
               {/* Mobile/Tablet Layout */}

@@ -1,11 +1,14 @@
 import React from "react";
 
+
 const AboutUs = () => {
   return (
-    <div className="bg-[rgba(225,225,225,1)] py-10" style={{ padding: "2rem" }}>
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <div className="relative bg-[rgba(225,225,225,1)] py-10 p-4 overflow-hidden">
+    
+      {/* ✅ Content */}
+      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 z-10">
         {/* Image Section */}
-        <div className="md:w-1/2 mt-32 z-10">
+        <div className="md:w-1/2 mt-32">
           <img
             src="https://digitalwhopper.com/_next/image?url=%2Fcompany.jpeg&w=1920&q=75"
             alt="About Digital Whopper"

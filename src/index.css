@@ -16,3 +16,24 @@
 .animate-popRotateY {
   animation: popRotateY 1.5s ease-out forwards;
 }
+@layer utilities {
+  @keyframes fillLine {
+    to {
+      height: 100%;
+    }
+  }
+  .animate-fillLine {
+    animation: fillLine 3s linear forwards;
+  }
+
+  /* Active circle colors */
+  .circle-inner.active1 {
+    background: orange;
+  }
+  .circle-inner.active2 {
+    background: black;
+  }
+  .circle-inner.active3 {
+    background: orange;
+  }
+}

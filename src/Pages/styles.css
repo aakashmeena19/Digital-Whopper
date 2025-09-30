@@ -1,0 +1,55 @@
+
+
+/* Base (mobile / default) */
+.swiper {
+  width: 250px;
+  height: 200px;
+}
+
+/* Small screens and up (sm: 640px) */
+@media (min-width: 640px) {
+  .swiper {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* Large screens and up (lg: 1024px) */
+@media (min-width: 1024px) {
+  .swiper {
+    width: 85%;
+    height: 600px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+   background-size: cover; /* 👈 image poora area cover kare */
+  background-position: center; /* 👈 center me set ho */
+  background-repeat: no-repeat; /* 👈 repeat na ho */
+
+}
+
+.swiper-slide:nth-child(1n) {
+  background-image: url(https://digitalwhopper.com/Marbleous.webp)
+}
+
+.swiper-slide:nth-child(2n) {
+ background-image: url(https://digitalwhopper.com/web-ss-3.webp)
+}
+
+.swiper-slide:nth-child(3n) {
+ background-image: url(https://digitalwhopper.com/web-ss-1.webp)
+}
+
+.swiper-slide:nth-child(4n) {
+ background-image: url(https://digitalwhopper.com/web-ss-1.webp)
+}
+
+

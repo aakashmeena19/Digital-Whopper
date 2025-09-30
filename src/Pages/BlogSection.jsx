@@ -28,7 +28,7 @@ const BlogSection = () => {
   return (
     <div className="bg-[rgba(225,225,225,1)] min-h-screen flex justify-center items-center py-10">
       {/* <div className="grid md:grid-cols-3 gap-40 max-w-7xl w-full mx-auto justify-items-center"> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 max-w-7xl w-full mx-auto px-4 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 max-w-7xl w-full mx-auto px-4 justify-items-center mt-28">
         {blogs.map((blog) => (
           <div key={blog.id} className="relative group w-full">
             {/* Orange background card */}
